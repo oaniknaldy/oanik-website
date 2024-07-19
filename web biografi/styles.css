@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.container h1 {
+    font-size: 2.5em;
+}
+
+.container p {
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+    padding-bottom: 80px; /* Make space for footer */
+}
+
+.project-list {
+    margin-top: 20px;
+}
+
+.project-list h2 {
+    margin-top: 0;
+}
+
+.project-item {
+    padding: 10px;
+    background: #222;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.social-buttons {
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Ensure buttons appear above footer */
+}
+
+.social-buttons .btn {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 10px;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-buttons .btn:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+footer {
+    background: #111;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #333;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 0; /* Ensure footer is below other content */
+}
+
+/* Media Queries for Responsive Design */
+
+/* Gaya untuk layar lebih besar dari 768px (tablet ke atas) */
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .social-buttons .btn {
+        padding: 20px 30px;
+    }
+}
+
+/* Gaya untuk layar lebih besar dari 992px (desktop ke atas) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 970px;
+    }
+
+    .social-buttons .btn {
+        padding: 25px 35px;
+    }
+}
+
+/* Gaya untuk layar lebih besar dari 1200px (large desktop) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .social-buttons .btn {
+        padding: 30px 40px;
+    }
+}
+
+/* Gaya untuk perangkat kecil (handphone) */
+@media (max-width: 767px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .social-buttons .btn {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+        padding: 10px;
+    }
+}
